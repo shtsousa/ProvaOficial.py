@@ -111,6 +111,6 @@ courses_name = read_csv()
 #print(sorted(courses_name))
 #print(type(courses_name))
 del_name(courses_name)
-print(sorted(del_name(courses_name, '\n')))
+print(sorted(del_name(courses_name)))
 len(courses_name)
 
