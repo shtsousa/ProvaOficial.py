@@ -52,9 +52,9 @@ import csv
 def read_csv(): #código para leitura de arquivo csv
     courses = []
     with open('C:/Users/USER10/Desktop/Samuel/Faculdade/3º Semestre/Linguagem de Programação/linguageDeProgramacaoOficial1-master/cursos-prouni2.csv', newline='') as inputfile:
-        for row in csv.reader(inputfile):
+          for row in csv.reader(inputfile):
             courses.append(row[0])
-    return courses
+          return courses
 
 def del_name(courses_name):
     listaP = []
@@ -106,11 +106,11 @@ A busca binária divide o valor ao meio, nesta divisão ele verifica se o valor 
 é menor ou maior do que os valores feitos nesta divisão e esta divisão vai sendo feita até que seja encontrado o valor.
 Este algoritmo é o mais vantajoso e traz o resultado em menos tempo.'''
 
-#3
+#3 tive dificuldade para contar a quantidade de cursos que possuia
 courses_name = read_csv()
 #print(sorted(courses_name))
 #print(type(courses_name))
 del_name(courses_name)
 print(sorted(del_name(courses_name)))
-len(courses_name)
-
+a = sorted(courses_name)
+print(len(a[0:-1])) #tentei executar o sorted no courses_name e usar o len para contar mas não obtive sucesso
